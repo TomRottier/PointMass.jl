@@ -3,6 +3,12 @@ CD(u, p::Parameters, t) = CD(alpha(u, p, t), p.aerodynamics)
 
 ∂CL_∂α(u, p::Parameters, t) = ∂CL_∂α(alpha(u, p, t), p.aerodynamics)
 ∂CD_∂α(u, p::Parameters, t) = ∂CD_∂α(alpha(u, p, t), p.aerodynamics)
+
+CL(α, p::Parameters) = CL(α, p.aerodynamics)
+CD(α, p::Parameters) = CD(α, p.aerodynamics)
+∂CL_∂α(α, p::Parameters) = ∂CL_∂α(α, p.aerodynamics)
+∂CD_∂α(α, p::Parameters) = ∂CD_∂α(α, p.aerodynamics)
+
 max_CL(p::Parameters) = max_CL(p.aerodynamics)
 max_CD(p::Parameters) = max_CD(p.aerodynamics)
 min_CD(p::Parameters) = min_CD(p.aerodynamics)

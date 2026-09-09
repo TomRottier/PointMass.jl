@@ -1,0 +1,8 @@
+name = "PointMass"
+uuid = "cef08b25-cf8f-4213-b67e-f952c602b589"
+authors = ["tom <tom.rottier@manchester.ac.uk>"]
+version = "0.1.0"
+
+
+[workspace]
+projects = ["test"]

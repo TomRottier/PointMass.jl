@@ -15,8 +15,8 @@ min_CD(p::Parameters) = min_CD(p.aerodynamics)
 alpha_CL_max(p::Parameters) = alpha_CL_max(p.aerodynamics)
 alpha_CD_max(p::Parameters) = alpha_CD_max(p.aerodynamics)
 alpha_CL_CD_max(p::Parameters) = alpha_CL_CD_max(p.aerodynamics)
-inverse_CL(p::Parameters) = inverse_CL(p.aerodynamics)
-inverse_CD(p::Parameters) = inverse_CD(p.aerodynamics)
+inverse_CL(cl, p::Parameters) = inverse_CL(cl, p.aerodynamics)
+inverse_CD(cd, p::Parameters) = inverse_CD(cd, p.aerodynamics)
 
 
 """
